@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:triton/screens/notifications.dart';
 
 import '../widgets/my_app_bar.dart';
 import '../widgets/main_drawer.dart';
@@ -16,7 +17,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
   var selectedIndex = 0;
   static const List<Widget> screens = [
     AquariumPage(),
-    Center(),
+    Notifications(),
   ];
 
   @override
@@ -26,7 +27,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
 
     return Scaffold(
       appBar: MyAppBar(theme: theme, mediaQuery: mediaQuery),
-      drawer: MainDrawer(),
+      drawer: const MainDrawer(),
       body: screens[selectedIndex],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(

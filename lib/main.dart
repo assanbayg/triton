@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import './theme.dart';
 import './screens/navigation_bar_page.dart';
+import './screens/aquarium_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,6 +21,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         NavigationBarPage.routeName: (context) => const NavigationBarPage(),
+        AquariumPage.routeName: (context) => const AquariumPage(),
       },
     );
   }

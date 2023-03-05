@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart'
+    show CircularPercentIndicator;
 
 class TimerWidget extends StatefulWidget {
   final MediaQueryData mediaQuery;
@@ -11,7 +12,7 @@ class TimerWidget extends StatefulWidget {
 }
 
 class _TimerWidgetState extends State<TimerWidget> {
-  int _timerDuration = 1; // Duration in minutes
+  int _timerDuration = 30; // Duration in minutes
   int _elapsedSeconds = 0;
   Timer? _timer;
 

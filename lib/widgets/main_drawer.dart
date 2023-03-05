@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
+import '../screens/notifications.dart';
+
 class MainDrawer extends StatelessWidget {
+  const MainDrawer({super.key});
+
   Widget buildListTile(String title, IconData icon, Function()? tapHandler) {
     return ListTile(
       title: Text(
@@ -37,8 +41,8 @@ class MainDrawer extends StatelessWidget {
         buildListTile('Aquarium', Icons.check_box_outline_blank_sharp,
             () => Navigator.of(context).pushReplacementNamed('/')),
         buildListTile('Notifications', Icons.notifications,
-            () => Navigator.of(context).pushReplacementNamed('/')),
-        buildListTile('Filters', Icons.settings, () => print('')),
+            () => Navigator.of(context).pushNamed(Notifications.routeName)),
+        buildListTile('Settings', Icons.settings, () => null),
       ]),
     );
   }

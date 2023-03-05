@@ -13,15 +13,16 @@ ThemeData basisTheme() => ThemeData(
       scaffoldBackgroundColor: Colors.lightBlue,
       fontFamily: fontNameDefault,
       textTheme: const TextTheme(
-        bodyMedium: TextStyle(color: Colors.black, fontSize: 16),
+        bodySmall: TextStyle(
+            color: Colors.grey, fontSize: 16, fontWeight: FontWeight.w300),
+        bodyMedium: TextStyle(color: Colors.white60, fontSize: 16),
         bodyLarge: TextStyle(
           color: Colors.black,
           fontSize: 18,
           fontWeight: FontWeight.w500,
         ),
-        headlineSmall: TextStyle(
-            color: Color.fromARGB(255, 34, 51, 59),
-            fontWeight: FontWeight.w700),
+        headlineSmall:
+            TextStyle(color: Colors.white, fontWeight: FontWeight.w700),
         headlineLarge:
             TextStyle(color: Colors.blue, fontWeight: FontWeight.w700),
       ),
@@ -40,7 +41,10 @@ ThemeData basisTheme() => ThemeData(
         style: TextButton.styleFrom(
           //foregroundColor: Colors.white,
           textStyle: const TextStyle(
-              fontSize: 15, decoration: TextDecoration.underline),
+            fontFamily: 'Quicksand',
+            fontSize: 15,
+            decoration: TextDecoration.underline,
+          ),
         ),
       ),
     );

@@ -4,8 +4,9 @@ import '../widgets/timer_widget.dart';
 import '../widgets/aquarium.dart';
 
 class AquariumPage extends StatelessWidget {
-  const AquariumPage({super.key});
+  static const routeName = '/aquarim-page';
 
+  const AquariumPage({super.key});
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
