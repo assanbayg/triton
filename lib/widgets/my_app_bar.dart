@@ -16,16 +16,8 @@ class MyAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        elevation: 0,
-        backgroundColor: theme.scaffoldBackgroundColor,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.menu_rounded,
-              size: mediaQuery.size.width * 0.09,
-            ),
-          ),
-        ]);
+      elevation: 0,
+      backgroundColor: theme.scaffoldBackgroundColor,
+    );
   }
 }

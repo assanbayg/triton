@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './theme.dart';
 
+import './theme.dart';
 import './screens/navigation_bar_page.dart';
 
 void main() {
@@ -13,9 +13,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Triton',
       theme: basisTheme(),
-      home: NavigationBarPage(),
+      home: const NavigationBarPage(),
+      initialRoute: '/',
+      routes: {
+        NavigationBarPage.routeName: (context) => const NavigationBarPage(),
+      },
     );
   }
 }

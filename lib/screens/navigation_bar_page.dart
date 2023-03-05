@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../widgets/my_app_bar.dart';
+import '../widgets/main_drawer.dart';
 import './aquarium_page.dart';
 
 class NavigationBarPage extends StatefulWidget {
@@ -25,6 +26,7 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
 
     return Scaffold(
       appBar: MyAppBar(theme: theme, mediaQuery: mediaQuery),
+      drawer: MainDrawer(),
       body: screens[selectedIndex],
       bottomNavigationBar: NavigationBarTheme(
         data: NavigationBarThemeData(
