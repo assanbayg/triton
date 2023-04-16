@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:triton/screens/notifications.dart';
 
 import '../widgets/my_app_bar.dart';
 import '../widgets/main_drawer.dart';
 import './aquarium_page.dart';
+import './todo_page.dart';
+import './books.dart';
 
 class NavigationBarPage extends StatefulWidget {
   static const routeName = '/nav-bar';
@@ -15,9 +16,10 @@ class NavigationBarPage extends StatefulWidget {
 
 class _NavigationBarPageState extends State<NavigationBarPage> {
   var selectedIndex = 0;
-  static const List<Widget> screens = [
-    AquariumPage(),
-    Notifications(),
+  static List<Widget> screens = [
+    const AquariumPage(),
+    TodoPage(),
+    BooksPage(),
   ];
 
   @override
@@ -56,10 +58,17 @@ class _NavigationBarPageState extends State<NavigationBarPage> {
             ),
             NavigationDestination(
               icon: Icon(
+                Icons.check,
+                color: Colors.white,
+              ),
+              label: 'To-Do',
+            ),
+            NavigationDestination(
+              icon: Icon(
                 Icons.bar_chart_rounded,
                 color: Colors.white,
               ),
-              label: 'Analyses',
+              label: 'Books',
             ),
           ],
         ),

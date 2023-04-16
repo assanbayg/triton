@@ -51,7 +51,7 @@ class _TimerWidgetState extends State<TimerWidget> {
       context: context,
       builder: (BuildContext context) {
         return SimpleDialog(
-          title: const Text('Set Timer Duration'),
+          title: const Text('Уақытты таңдашы'),
           children: [
             Padding(
               padding: const EdgeInsets.all(16.0),
@@ -60,7 +60,7 @@ class _TimerWidgetState extends State<TimerWidget> {
                   TextField(
                     keyboardType: TextInputType.number,
                     decoration: const InputDecoration(
-                      hintText: 'Enter duration in minutes',
+                      hintText: 'Уақытты минутта жазшы',
                     ),
                     onSubmitted: (value) {
                       Navigator.pop(
@@ -72,7 +72,7 @@ class _TimerWidgetState extends State<TimerWidget> {
                     onPressed: () {
                       Navigator.pop(context, _timerDuration);
                     },
-                    child: const Text('Cancel'),
+                    child: const Text('Болдырмау'),
                   ),
                 ],
               ),

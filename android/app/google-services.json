@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "715048636910",
+    "project_id": "alash-hackathon",
+    "storage_bucket": "alash-hackathon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715048636910:android:217fc29530920c678e3eff",
+        "android_client_info": {
+          "package_name": "com.example.triton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715048636910-85j06i0u5uu59i5gfjb1fime8qbqupg0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv98aD4C8JGzCaSiD4rUXw9wP5hopVLaE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715048636910-85j06i0u5uu59i5gfjb1fime8qbqupg0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "715048636910-0oqcklld6um7hslsc54obo8d2vr9r0gd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.triton"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

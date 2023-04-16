@@ -26,7 +26,7 @@ class MainDrawer extends StatelessWidget {
           color: Theme.of(context).primaryColor,
           child: ListTile(
             title: const Text(
-              'Account',
+              'Қолданушы',
               style: TextStyle(color: Colors.white),
             ),
             leading: const Icon(
@@ -38,11 +38,11 @@ class MainDrawer extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 20),
-        buildListTile('Aquarium', Icons.check_box_outline_blank_sharp,
+        buildListTile('Аквариум', Icons.check_box_outline_blank_sharp,
             () => Navigator.of(context).pushReplacementNamed('/')),
-        buildListTile('Notifications', Icons.notifications,
+        buildListTile('Хабарламалар', Icons.notifications,
             () => Navigator.of(context).pushNamed(Notifications.routeName)),
-        buildListTile('Settings', Icons.settings, () => null),
+        buildListTile('Баптаулар', Icons.settings, () => null),
       ]),
     );
   }

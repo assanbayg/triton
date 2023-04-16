@@ -53,7 +53,7 @@ class _NotificationsState extends State<Notifications> {
         children: [
           Column(
             children: [
-              Text('Notifications',
+              Text('Хабарламалар',
                   style: Theme.of(context).textTheme.headlineSmall),
               SizedBox(height: mediaQuery.size.height * 0.025),
               Container(
@@ -67,12 +67,9 @@ class _NotificationsState extends State<Notifications> {
                 child: SingleChildScrollView(
                     child: Column(
                   children: [
-                    buildListTile(
-                        'You finished 50 minutes focus!', 'Great job!'),
-                    buildListTile(
-                        'You finished 50 minutes focus!', 'Great job!'),
-                    buildListTile(
-                        'You finished 50 minutes focus!', 'Great job!'),
+                    buildListTile('Сен фокусты көп ұстадың!', 'Керемет!'),
+                    buildListTile('Сен фокусты көп ұстадың!', 'Керемет!'),
+                    buildListTile('Сен фокусты көп ұстадың!', 'Керемет!'),
                     Container(
                       height: 2,
                       width: mediaQuery.size.width / 1.5,
@@ -80,8 +77,8 @@ class _NotificationsState extends State<Notifications> {
                       color: Colors.grey,
                     ),
                     buildAchievmentsTile(
-                        'You are invited to Harvard graduate meeting',
-                        'It is going to be 13.12.23 in Smart Point'),
+                        'Сен Гарвард студентпен кездесуді ұттың!',
+                        'Ол 13.12.23 Smart Point болады'),
                     buildAchievmentsTile(
                         'You unlocked an andrias, a biggest newt',
                         'It is goiing to be added in your aquarium'),

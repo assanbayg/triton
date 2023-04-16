@@ -35,6 +35,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  firebase_core: ^2.7.0
+  cloud_firestore: ^4.4.3
 
 dev_dependencies:
   flutter_test:
@@ -45,9 +47,10 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
+
   flutter_lints: ^2.0.0
   percent_indicator: ^4.0.1
-  
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -64,6 +67,7 @@ flutter:
     - assets/images/plants.png
     - assets/images/plant1.png
     - assets/images/plant2.png
+    - assets/images/frog.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
